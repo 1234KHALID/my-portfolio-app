@@ -3,6 +3,7 @@ import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
 import Skills from "@/components/skills";
+import Experience from "@/components/experience";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <SectionDivider />
       <About />
       <Skills />
+      <Experience />
     </main>
   );
 };
