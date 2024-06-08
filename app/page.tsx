@@ -5,6 +5,7 @@ import About from "@/components/about";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import Projects from "@/components/projects";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Intro />
       <SectionDivider />
       <About />
+      <Projects />
       <Skills />
       <Experience />
       <Contact />
