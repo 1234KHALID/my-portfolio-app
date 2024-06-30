@@ -1,6 +1,5 @@
-"use client";
-
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -10,6 +9,30 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [senderEmail, setSenderEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleEmailSubmit = async ( event: React.FormEvent<HTMLFormElement> ) => {
+    event.preventDefault();
+
+    const formData = new FormData();
+    formData.append("senderEmail", senderEmail);
+    formData.append("message", message);
+
+    const { data, error } = await sendEmail(formData);
+
+    if (!data) {
+      toast.error("Failed to send email");
+    } else {
+      toast.success("Email sent successfully!");
+      setSenderEmail(""); // Clear email input
+      setMessage(""); // Clear message input
+    }
+
+    if (error) {
+      toast.error(error);
+    }
+  };
 
   return (
     <motion.section
@@ -41,21 +64,14 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
+        onSubmit={handleEmailSubmit}
       >
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
+          value={senderEmail}
+          onChange={(e) => setSenderEmail(e.target.value)}
           required
           maxLength={500}
           placeholder="Your email"
@@ -63,6 +79,8 @@ export default function Contact() {
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           placeholder="Your message"
           required
           maxLength={5000}
