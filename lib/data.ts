@@ -2,6 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import youTube from "../public/youtube.png";
+import chatApp from "../public/chat-app.png";
+import lms from "../public/lms.png";
+import ecommerce from "../public/e-commerce.png";
 export const links = [
   {
     name: "Home",
@@ -30,19 +34,21 @@ export const links = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
   "TypeScript",
+  "JavaScript",
   "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
+  "NextJs",
+  "NodeJs",
+  "NestJs",
+  "ExpressJs",
   "Prisma",
   "MongoDB",
+  "Git & Github",
   "Redux",
-  "Express",
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Ant Design",
   "Framer Motion",
 ] as const;
 
@@ -74,24 +80,59 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Learning Managment System App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    // imageUrl: corpcommentImg,
+      "A Learning Management System (LMS) is a platform for creating, managing, and delivering educational content and training.",
+    tags: [
+      "NextJs",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "Prisma",
+      "MongoDB",
+      "Payment for Stripe",
+    ],
+    url: "",
+    imageUrl: lms,
   },
   {
-    title: "rmtDev",
+    title: "Chat Application",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    // imageUrl: rmtdevImg,
+      "The Chat Application project is a real-time messaging platform that enables users to send and receive messages instantly.",
+    tags: [
+      "ReactJs",
+      "Javascript",
+      "Tailwind CSS",
+      "Daisyui",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Socket/io",
+    ],
+    url: "https://chat-application-app.onrender.com/login",
+    imageUrl: chatApp,
   },
   {
-    title: "Word Analytics",
+    title: "E-commerce Admin Dashboard & Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    // imageUrl: wordanalyticsImg,
+      "This project includes an e-commerce website for customers to browse, search, and purchase products, along with an admin dashboard for managing the platform.",
+    tags: [
+      "NextJs",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "Prisma",
+      "MongoDB",
+    ],
+    url: "",
+    imageUrl: ecommerce,
+  },
+  {
+    title: "Youtube Clone",
+    description:
+      "The YouTube Clone project is a video-sharing platform that allows users, view, like, and comment on videos.",
+    tags: ["React", "Material UI", "Tailwind", "Rapid API"],
+    url: "https://youtube-video-clone-app.netlify.app",
+    imageUrl: youTube,
   },
 ] as const;
