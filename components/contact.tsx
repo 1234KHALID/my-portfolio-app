@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
@@ -12,7 +12,7 @@ export default function Contact() {
   const [senderEmail, setSenderEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleEmailSubmit = async ( event: React.FormEvent<HTMLFormElement> ) => {
+  const handleEmailSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const formData = new FormData();
@@ -59,7 +59,7 @@ export default function Contact() {
         <a className="underline" href="mailto:example@gmail.com">
           blykhalid1999@gmail.com
         </a>{" "}
-        or through this form.
+        or 8126165042 and through this form.
       </p>
 
       <form
