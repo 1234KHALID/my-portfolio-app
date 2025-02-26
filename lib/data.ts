@@ -92,7 +92,7 @@ export const projectsData = [
       "MongoDB",
       "Payment for Stripe",
     ],
-    url: "",
+    url: "https://learning-management-system-nextjs13-app.vercel.app",
     imageUrl: lms,
   },
   {
@@ -112,27 +112,27 @@ export const projectsData = [
     url: "https://chat-application-app.onrender.com/login",
     imageUrl: chatApp,
   },
-  {
-    title: "E-commerce Admin Dashboard & Website",
-    description:
-      "This project includes an e-commerce website for customers to browse, search, and purchase products, along with an admin dashboard for managing the platform.",
-    tags: [
-      "NextJs",
-      "TypeScript",
-      "Tailwind CSS",
-      "Shadcn/UI",
-      "Prisma",
-      "MongoDB",
-    ],
-    url: "",
-    imageUrl: ecommerce,
-  },
-  {
-    title: "Youtube Clone",
-    description:
-      "The YouTube Clone project is a video-sharing platform that allows users, view, like, and comment on videos.",
-    tags: ["React", "Material UI", "Tailwind", "Rapid API"],
-    url: "https://youtube-video-clone-app.netlify.app",
-    imageUrl: youTube,
-  },
+  // {
+  //   title: "E-commerce Admin Dashboard & Website",
+  //   description:
+  //     "This project includes an e-commerce website for customers to browse, search, and purchase products, along with an admin dashboard for managing the platform.",
+  //   tags: [
+  //     "NextJs",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Shadcn/UI",
+  //     "Prisma",
+  //     "MongoDB",
+  //   ],
+  //   url: "",
+  //   imageUrl: ecommerce,
+  // },
+  // {
+  //   title: "Youtube Clone",
+  //   description:
+  //     "The YouTube Clone project is a video-sharing platform that allows users, view, like, and comment on videos.",
+  //   tags: ["React", "Material UI", "Tailwind", "Rapid API"],
+  //   url: "https://youtube-video-clone-app.netlify.app",
+  //   imageUrl: youTube,
+  // },
 ] as const;

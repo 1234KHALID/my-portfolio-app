@@ -28,12 +28,10 @@ export default function About() {
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          TypeScript, ReactJs, NodeJs, NestJs, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I am also familiar with Next.js and Prisma. I am always looking to
+        learn new technologies.
       </p>
 
       <p>
@@ -41,7 +39,7 @@ export default function About() {
         audio books and traveling as well as exploring new places. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
-        <span className="font-medium">Web Application Security Audit</span>.
+        <span className="font-medium">Data Structure & DevOps</span>.
       </p>
     </motion.section>
   );
