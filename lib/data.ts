@@ -127,12 +127,12 @@ export const projectsData = [
   //   url: "",
   //   imageUrl: ecommerce,
   // },
-  // {
-  //   title: "Youtube Clone",
-  //   description:
-  //     "The YouTube Clone project is a video-sharing platform that allows users, view, like, and comment on videos.",
-  //   tags: ["React", "Material UI", "Tailwind", "Rapid API"],
-  //   url: "https://youtube-video-clone-app.netlify.app",
-  //   imageUrl: youTube,
-  // },
+  {
+    title: "Youtube Clone",
+    description:
+      "The YouTube Clone project is a video-sharing platform that allows users, view, like, and comment on videos.",
+    tags: ["React", "Material UI", "Tailwind", "Rapid API"],
+    url: "https://youtube-video-clone-app.netlify.app",
+    imageUrl: youTube,
+  },
 ] as const;
